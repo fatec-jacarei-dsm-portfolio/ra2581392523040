@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #294229;
+  color: white;
+  padding: 30px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.foto img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+section {
+  padding: 20px;
+  margin: 20px;
+  background: white;
+  border-radius: 8px;
+}
+
+h2 {
+  color: #333;
+}
+
+.projeto {
+  margin-bottom: 20px;
+}
+
+.projeto a {
+  color: blue;
+  text-decoration: none;
+}
+
+ul {
+  list-style: square;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background:#294229;
+  color: white;
+}
+
+/* GRID DE CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* CARD */
+.projeto {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+/* HOVER */
+.projeto:hover {
+  transform: translateY(-5px);
+}
+
+/* LINK */
+.projeto a {
+  display: inline-block;
+  margin-top: 10px;
+  color: blue;
+  text-decoration: none;
+}
+
+ul li {
+  display: flex;
+  align-items: center; /* 🔥 alinha verticalmente */
+  gap: 10px; /* espaço entre imagem e texto */
+  margin-bottom: 10px;
+}
