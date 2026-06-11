@@ -3,105 +3,377 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Portfólio - Jocélio Gomes da Silva</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portfólio de Jocelio Gomes da Silva, estudante de Desenvolvimento de Software Multiplataforma com foco em front-end, desenvolvimento full-stack. e Delphi">
+  <title>Jocélio Gomes da Silva | Portfólio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Rajdhani:wght@500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+  <header class="topbar">
+    <nav class="nav" aria-label="Navegação principal">
+      <a class="brand" href="#inicio" aria-label="Ir para o início">
+        <span class="brand-mark">RA</span> 2581392523040
 
-  <!-- 👤 APRESENTAÇÃO -->
-  <header>
-    <div class="container">
-      <div class="foto">
-        <!-- coloque sua foto depois -->
-        <img src="./foto.PNG" alt="Foto de Jocelio">
+      </a>
+      <div class="nav-links">
+        <a href="#sobre">Sobre</a>
+        <a href="#skills">Skills</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#trajetoria">Trajetória</a>
+        <a href="#contato">Contato</a>
       </div>
-
-      <div>
-        <h1>Jocelio Gomes da Silva</h1>
-        <p>FATEC - Faculdade de Tecnologia de São Paulo</p>
-        <p>Cursando Segundo Semestre em Desenvolvimento de Software Multiplataforma</p>
-        <p class="descricao">
-          Desenvolvedor em formação com foco em aplicações web, APIs REST e arquitetura de sistemas, buscando aplicar na
-          prática conceitos de programação e estrutura de dados.
-        </p>
-      </div>
-    </div>
+    </nav>
   </header>
 
-  <!-- 💻 PROJETOS -->
-  <section>
-    <h2>💻 Projetos</h2>
-
-    <div class="cards">
-
-      <div class="projeto">
-        <h3>🖥️ Projeto Desktop + Mobile</h3>
-        <p>Sistema em desenvolvimento com arquitetura em camadas integrando aplicação desktop e servidor REST e App
-          Mobile</p>
-        <a href="https://github.com/Git-Jocelio/Projeto-Desktop-Mobile" target="_blank">Ver no GitHub</a>
-      </div>
-
-      <div class="projeto">
-        <h3>📊 App Pesquisa de Resultados</h3>
-        <p>Aplicação para consulta de resultados com consumo de API e exibição em interface web.</p>
-        <a href="https://github.com/Git-Jocelio/App-Pesquisa-Resultados" target="_blank">Ver no GitHub</a>
-      </div>
-
-      <div class="projeto">
-        <h3>🏢 ERP Lajes</h3>
-        <p>Sistema de gestão com foco em controle de dados e organização de processos empresariais.</p>
-        <a href="https://github.com/Git-Jocelio/erp-lajes" target="_blank">Ver no GitHub</a>
-      </div>
-
-      <div class="projeto">
-        <h3>🧠 Estrutura de Dados</h3>
-        <p>Aplicação com implementação de pilha, fila e lista com integração entre backend e frontend.</p>
-        <a href="https://github.com/Git-Jocelio/App-estrutura-dados" target="_blank">Ver no GitHub</a>
-      </div>
-
-      <div class="projeto">
-        <h3>🌎 INPE - Sensoriamento Remoto</h3>
-
-        <p>
-          Plataforma web desenvolvida para gerenciamento e divulgação
-          de conteúdos relacionados ao laboratório de Sensoriamento Remoto,
-          incluindo notícias, publicações, oportunidades e área administrativa.
+  <main id="inicio" class="page">
+    <section class="hero" aria-label="Apresentação">
+      <div>
+        <p class="eyebrow">Player 01 | Full-stack em evolução</p>
+        <h1>Jocelio<span>Gomes da Silva</span></h1>
+        <p class="hero-copy">
+          Busco desenvolver minha carreira na área de Tecnologia da Informação, fortalecendo meus conhecimentos
+          técnicos, ampliando minha experiência em diferentes tecnologias e contribuindo ativamente para a solução
+          de desafios e projetos da equipe.
         </p>
-
-        <a href="https://github.com/Git-Jocelio/inpe-sensoriamentoremoto" target="_blank">
-          Ver no GitHub
-        </a>
-
+        <div class="hero-actions">
+          <a class="button primary" href="#projetos">Ver projetos</a>
+          <a class="button" href="https://github.com/Git-Jocelio" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
       </div>
 
-    </div>
+      <aside class="character-panel" aria-label="Ficha do desenvolvedor">
+        <div class="avatar-frame">
+          <img class="avatar-photo" src="assets/foto.PNG" alt="Foto de Jocelio Gomes da Silva">
+        </div>
+        <div class="character-meta">
+          <h2>Classe: Dev Designer</h2>
+          <p class="tagline">Front-end, Figma e fundamentos full-stack</p>
+          <div class="status-grid">
+            <div class="status">
+              <strong>Desenvolvimento de Software Mutiplataforma</strong>
+              <span>FATEC Jacareí</span>
+            </div>
+            <div class="status">
+              <strong>2028</strong>
+              <span>Formação prevista</span>
+            </div>
+            <div class="status">
+              <strong>Jacareí</strong>
+              <span>São Paulo</span>
+            </div>
+            <div class="status">
+              <strong>PT/EN</strong>
+              <span>Idiomas</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
 
-  </section>
+    <section id="sobre">
+      <div class="section-title">
+        <h2>Sobre Mim</h2>
+        <p>Uma apresentação direta sobre minha jornada na tecnologia e meu momento atual.</p>
+      </div>
+      <div class="about-grid">
+        <article class="panel">
+          <p>
+            Olá, me chamo Jocélio Gomes da Silva e sou estudante de Desenvolvimento de Software Multiplataforma na FATEC
+            Jacareí. Tenho interesse em desenvolvimento de software, interfaces digitais e tecnologias que transformam
+            ideias em soluções práticas.
 
-  <!-- 🧠 TECNOLOGIAS -->
-  <section>
-    <h2>🧠 Tecnologias</h2>
-    <ul>
-      <li> <img src="./js.webp" alt="Foto de Jocelio" height="25"> JavaScript / TypeScript</li>
-      <li><img src="./node.png" alt="Foto de Jocelio" height="50">Node.js / Express</li>
-      <li><img src="./react.png" alt="Foto de Jocelio" height="25">React</li>
-      <li><img src="./postgree.png" alt="Foto de Jocelio" height="40">PostgreSQL / Firebird</li>
-      <li><img src="./delphi.png" alt="Foto de Jocelio" height="25">Delphi</li>
-    </ul>
-  </section>
+            Ao longo da graduação, participei de projetos utilizando React, Node.js, TypeScript, PostgreSQL e Figma,
+            atuando principalmente no desenvolvimento front-end e na criação de interfaces. Meu objetivo é continuar
+            aprimorando minhas competências técnicas, adquirir experiência profissional e contribuir para o
+            desenvolvimento de produtos digitais modernos, intuitivos e funcionais.
+          </p>
+          <br>
+          <p>
+            Atualmente venho atuando em projetos acadêmicos com perfil full-stack, mas com
+            foco mais forte em front-end e design de interfaces no Figma. Meu objetivo é
+            consolidar conhecimento técnico na prática, colaborar com equipes e transformar
+            ideias em produtos claros, modernos e funcionais.
+          </p>
+        </article>
+        <aside class="panel">
+          <ul class="mini-list">
+            <li><strong>Área</strong><span>Front-end / Full-stack </span></li>
+            <li><strong>Atualmente</strong><span>/ Desenvolver Delphi Jr</span></li>
+            <li><strong>Curso</strong><span>Desenvolvimento de Software Mutiplataforma</span></li>
+            <li><strong>Status</strong><span>Cursando</span></li>
+            <li><strong>Local</strong><span>Jacareí, SP - Brasil</span></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
 
-  <!-- 📞 CONTATO -->
-  <section>
-    <h2>📞 Contato</h2>
-    <p>Email: trelica.aricanga@gmail.com</p>
-    <p>GitHub: github.com/Git-jocelio</p>
-  </section>
+    <section id="skills">
+      <div class="section-title">
+        <h2>Árvore de Skills</h2>
+        <p>Tecnologias e ferramentas que fazem parte do meu inventário de desenvolvimento.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill">
+          <div class="skill-top">
+            <div class="skill-icon"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt="Ícone JavaScript"></div>
+            <div class="skill-name">JavaScript</div>
+          </div>
+          <div class="bar"><i style="width: 86%"></i></div>
+        </div>
+        <div class="skill">
+          <div class="skill-top">
+            <div class="skill-icon"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                alt="Ícone TypeScript"></div>
+            <div class="skill-name">TypeScript</div>
+          </div>
+          <div class="bar"><i style="width: 78%"></i></div>
+        </div>
+        <div class="skill">
+          <div class="skill-top">
+            <div class="skill-icon"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="Ícone React">
+            </div>
+            <div class="skill-name">React</div>
+          </div>
+          <div class="bar"><i style="width: 82%"></i></div>
+        </div>
+        <div class="skill">
+          <div class="skill-top">
+            <div class="skill-icon"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg" alt="Ícone Vite">
+            </div>
+            <div class="skill-name">Vite</div>
+          </div>
+          <div class="bar"><i style="width: 74%"></i></div>
+        </div>
+        <div class="skill">
+          <div class="skill-top">
+            <div class="skill-icon"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="Ícone HTML5">
+            </div>
+            <div class="skill-name">HTML5</div>
+          </div>
+          <div class="bar"><i style="width: 90%"></i></div>
+        </div>
+        <div class="skill">
+          <div class="skill-top">
+            <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                alt="Ícone CSS3"></div>
+            <div class="skill-name">CSS3</div>
+          </div>
+          <div class="bar"><i style="width: 88%"></i></div>
+        </div>
+        <div class="skill">
+          <div class="skill-top">
+            <div class="skill-icon"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Ícone Python">
+            </div>
+            <div class="skill-name">Python</div>
+          </div>
+          <div class="bar"><i style="width: 68%"></i></div>
+        </div>
+        <div class="skill">
+          <div class="skill-top">
+            <div class="skill-icon"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Ícone Node.js">
+            </div>
+            <div class="skill-name">Node.js</div>
+          </div>
+          <div class="bar"><i style="width: 72%"></i></div>
+        </div>
+        <div class="skill">
+          <div class="skill-top">
+            <div class="skill-icon"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                alt="Ícone PostgreSQL"></div>
+            <div class="skill-name">PostgreSQL</div>
+          </div>
+          <div class="bar"><i style="width: 70%"></i></div>
+        </div>
+        <div class="skill">
+          <div class="skill-top">
+            <div class="skill-icon"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
+                alt="Ícone Docker">
+            </div>
+
+            <div class="skill-name">Docker</div>
+          </div>
+          <div class="bar"><i style="width: 66%"></i></div>
+        </div>
+        <div class="skill">
+          <div class="skill-top">
+            <div class="skill-icon"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Ícone Figma">
+            </div>
+            <div class="skill-name">Figma</div>
+          </div>
+          <div class="bar"><i style="width: 86%"></i></div>
+        </div>
+        <div class="skill">
+          <div class="skill-top">
+            <div class="skill-icon"><img src="https://astah.net/wp-content/uploads/2019/07/Astah_blue.svg"
+                alt="Ícone Git"></div>
+            <div class="skill-name">Astah UML</div>
+          </div>
+          <div class="bar"><i style="width: 64%"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos">
+      <div class="section-title">
+        <h2>Missões Concluídas</h2>
+        <p>Projetos acadêmicos com foco em produto, interface, implementação e colaboração em equipe.</p>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-video">
+            <img src="assets/agriRS.png" alt="Logo da secretaria">
+          </div>
+          <div class="project-body">
+            <h3>AgriRS Lab</h3>
+            <p>
+              Desenvolvimento de um website para centralizar informações do Laboratório de
+              Sensoriamento Remoto Agrícola do INPE, ampliando a visibilidade de pesquisas,
+              projetos e iniciativas.
+            </p>
+            <p>
+              Na 1º Sprint eu Atuei emparte no design da página de email e contatos no Figma e implementei o front-end,
+              utlizando
+              ferrmantas como HTML, CSS e JavaScript para criar uma interface moderna e responsiva.</p>
+            <p>Na 2ª Sprint, atuei no desenvolvimento do CRUD para o back-end em JavaScript, viabilizando a criação,
+              leitura, atualização e exclusão de notícias, contatos.</p>
+            <p>Na terceira e última Sprint, foi a finalização do CRUD, com isto consegui estabelecer a integração
+              completa com o banco de dados. Com isso, a página de notícias tornou-se totalmente funcional, operando com
+              persistência de dados em tempo real.</p>
+            <div class="badges">
+              <span class="badge">Figma</span>
+              <span class="badge">HTML5</span>
+              <span class="badge">CSS3</span>
+              <span class="badge">JavaScript</span>
+              <span class="badge">PostgreSQL</span>
+              <span class="badge">2025</span>
+            </div>
+            <a class="button" href="https://github.com/devmaster-organizations/inpe-sensoriamentoremoto" target="_blank"
+              rel="noreferrer">Abrir repositório</a>
+
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual media">
+            <img src="assets/SECRETARIA.PNG" alt="Logo da secretaria"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+            <span class="visual-fallback">SECRETARIA</span>
+          </div>
+          <div class="project-body">
+            <h3>Secretaria Acadêmica FATEC</h3>
+            <p>
+              Aplicação web de autoatendimento baseada em um chatbot conversacional, desenvolvida para otimizar o
+              atendimento da secretaria acadêmica por meio de fluxos interativos de perguntas e respostas, reduzindo
+              demandas operacionais e facilitando o acesso às informações pelos usuários.
+
+              Atuo no desenvolvimento do frontend da plataforma, sendo responsável pela criação e manutenção das
+              interfaces administrativas para gerenciamento dos nós conversacionais da aplicação, utilizando React,
+              TypeScript e boas práticas de desenvolvimento web.
+
+              O projeto encontra-se em fase de desenvolvimento, com previsão de conclusão ao final do primeiro semestre
+              de 2026.
+
+            </p>
+            <div class="badges">
+              <span class="badge">React</span>
+              <span class="badge">TypeScript</span>
+              <span class="badge">Figma</span>
+              <span class="badge">2026</span>
+            </div>
+            <a class="button" href="https://github.com/devmaster-organizations/infra-autoatendimento" target="_blank"
+              rel="noreferrer">Abrir
+              repositório</a>
+
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="trajetoria">
+      <div class="section-title">
+        <h2>Trajetória</h2>
+        <p>Formação, experiência profissional e evolução técnica.</p>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item">
+          <span class="date">Janeiro 2026 - Atual</span>
+          <h3>Desenvolver Delphi Junior | Aussel</h3>
+          <p>Desenvolvimento e manutenção de sistemas em delhi.</p>
+        </article>
+        <article class="timeline-item">
+          <span class="date">Agosto 2025 - Junho 2028</span>
+          <h3>FATEC Jacareí | Desenvolvimento de Software Multiplataforma</h3>
+          <p>Tecnólogo em andamento, com projetos em equipe voltados a aplicações web, front-end, back-end e design de
+            interfaces.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="certificados">
+      <div class="section-title">
+        <h2>Conquistas</h2>
+        <p>Cursos e certificações que fortalecem minha base técnica.</p>
+      </div>
+      <ul class="certificates">
+        <li>Começando com o Cisco Packet Tracer | Cisco Networking Academy | Nov/2025</li>
+        <li>Gerenciamento de Ameaças Cibernéticas | Cisco Networking Academy | Set/2025</li>
+        <li>Linux Unhatched | Cisco Networking Academy | Set/2025</li>
+        <li>Curso Básico de Git | Cursa.com.br | Ago/2025 | 8h</li>
+        <li>Introdução à IoT | Cisco Networking Academy | Dez/2020</li>
+      </ul>
+    </section>
+
+    <section id="contato">
+      <div class="section-title">
+        <h2>Contato</h2>
+        <p>Pronto para colaborar, aprender e contribuir em projetos de tecnologia.</p>
+      </div>
+      <div class="contact">
+        <article class="panel">
+          <h3>Vamos conversar?</h3>
+          <p>
+            Estou sempre aberto a trocar conhecimentos, compartilhar experiências e participar de projetos que
+            contribuam para meu crescimento profissional e técnico.
+          </p>
+          <div class="contact-links">
+            <a href="https://github.com/Git-Jocelio" target="_blank" rel="noreferrer">github.com/Git-Jocelio
+              <span>GitHub</span></a>
+          </div>
+        </article>
+        <aside class="panel">
+          <ul class="mini-list">
+            <li><strong>Cidade</strong><span>Guararema - SP</span></li>
+            <li><strong>País</strong><span>Brasil</span></li>
+            <li><strong>Idiomas</strong><span>Português</span></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2026 - Jocelio Gomes da Silva</p>
+    <div class="page">© 2026 Jocelio Gomes da Silva.</div>
   </footer>
-
+  <script src="js/main.js"></script>
 </body>
 
 </html>
